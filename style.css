@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 500px;
+    width: 900px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.container > div{
+    height: 250px;
+    width: 100%;
+    background-color: aqua;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    /* overflow-y: hidden; */
+}
+
+.container_game{
+    position: relative; 
+    border-bottom: 3px solid black;
+    padding: 0.3em 2em;
+    width: 100%;
+    background-color: blueviolet;
+    height: 200px;
+     overflow: hidden;
+}
+/* 30% de saut 65% de pause ils se rencontrent à 88% */
+.ball{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 88%;
+    top: 83%;
+    /* overflow-y: hidden; */
+}
+
+.container_game i{
+    font-size: 4em;
+    position: absolute;
+    top: 65%;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
