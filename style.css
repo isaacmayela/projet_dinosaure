@@ -42,21 +42,22 @@ body{
     height: 200px;
      overflow: hidden;
 }
-/* 30% de saut 65% de pause ils se rencontrent à 88% */
+/* 30% de saut 128 de pause ils se rencontrent à 87% */
 .ball{
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: red;
     position: absolute;
-    right: 88%;
+    right: 0%;
     top: 83%;
-    /* overflow-y: hidden; */
 }
 
 .container_game i{
     font-size: 4em;
+    /* transform: translate(0, 125px); */
     position: absolute;
+    /* transition: all 0.5s; */
     top: 65%;
 }
 
